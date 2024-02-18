@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>แบบทดสอบวิชาชีพครู</title>
+</head>
+<center><h1>แบบทดสอบวิชาพื้นฐานและวิชาชีพครู</h1></center> 
+<style>
+        body {
+            background-color: 	#F0F8FF; /* กำหนดสีพื้นหลังของหน้าเว็บ */
+            font-family: 'Cordia New', sans-serif; /* กำหนดแบบอักษร */
+			font-size: 22px;
+        }
+
+        .content {
+            text-align: center;
+            padding: 2px;
+        }
+		h1 {
+            background-color: #99CCFF; /* กำหนดสีพื้นหลังของตัวหนังสือ */
+            color: #000000; /* กำหนดสีข้อความ */
+            padding: 2px; /* กำหนดการเพิ่มพื้นที่รอบข้อความ */
+			border-radius: 60px;
+			border: 6px solid #3366FF;
+        }
+		
+		 br {
+            line-height: 0.5; /* กำหนดระยะห่างระหว่างบรรทัด */
+        }	
+
+		 h2 {
+		    background-color: #66FF66;
+            border: 6px solid #339900; /* กำหนดขอบของกรอบ */
+            padding: 6px; /* กำหนดการเพิ่มพื้นที่รอบข้อความ */
+            margin: 20px auto; /* กำหนดระยะห่างระหว่างกรอบกับเนื้อหา */
+            max-width: 200px; /* กำหนดความกว้างสูงสุดของกรอบ */
+			text-align: center;
+			border-radius: 60px;
+        }
+		img {
+       
+        }
+    </style>
+<?php
+
+
+
+
+//กำหนดคะเเนนเริ่มต้น
+$score=0;
+echo "<center><b>ชื่อ : </b>".$_POST["name"]."<br></center>";
+echo "<center><b>Email : </b>".$_POST["email"]."<br></center>";
+
+
+//รายงานคะเเนน
+echo "<h2>คะแนนที่ได้ : "."$score</h2>";
+?>
+
+<body>
+ <?php
+        // ที่อยู่หรือ URL ของรูปภาพ
+        $imagePath = '19.png';
+		
+        
+    ?>
+
+    <center><img src="<?php echo $imagePath; ?>" alt="Image Description"></center>
+</body>
+</body>
+</html>
